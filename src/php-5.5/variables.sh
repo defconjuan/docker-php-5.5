@@ -385,3 +385,7 @@ if [ -z "${CRON}" ]; then
 fi
 
 export FACTER_CRON="${CRON}"
+
+if [ -z "${CONTAINER_USER_PASS}" ]; then
+  CONTAINER_USER_PASS="container"
+fi
