@@ -17,3 +17,5 @@ service ssh start
 puppet apply --modulepath=/src/php-5.5/build/modules /src/php-5.5/build/build.pp
 
 echo -e "container\ncontainer" | passwd container
+
+service ssh start
