@@ -15,7 +15,7 @@ apache-data:
   volumes:
     - .:/apache/data
 php:
-  image: defconjuan/docker-php-5.5:1.2.12.3
+  image: defconjuan/docker-php-5.5:1.2.12.5
   hostname: php
   volumes_from:
     - apache-data

@@ -1,4 +1,4 @@
-VERSION = "1.2.12.3"
+VERSION = "1.2.12.5"
 
 require 'yaml'
 

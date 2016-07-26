@@ -7,11 +7,9 @@ sed -i 's/Port 22/\# Defcon edits\: \
 \Port 22 \# original\
  Port 50022/g' /etc/ssh/sshd_config
  
-# /etc/init.d/ssh start
-
-# systemctl enable ssh.socket
-# update-rc.d ssh defaults
-# service ssh start
+/etc/init.d/ssh start
+update-rc.d ssh defaults
+service ssh start
 
 puppet apply --modulepath=/src/php-5.5/build/modules /src/php-5.5/build/build.pp
 

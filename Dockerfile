@@ -12,4 +12,6 @@ RUN /src/entrypoint.sh build
 
 EXPOSE 9000 50022
 
+CMD service ssh start
+
 ENTRYPOINT ["/src/entrypoint.sh", "run"]
