@@ -15,7 +15,7 @@ apache-data:
   volumes:
     - .:/apache/data
 php:
-  image: dockerizedrupal/php-5.5:1.2.12
+  image: defconjuan/docker-php-5.5:1.2.12.3
   hostname: php
   volumes_from:
     - apache-data
@@ -82,3 +82,4 @@ php:
     - CRONTAB_1_COMMAND=
     - USER_ID=
     - GROUP_ID=
+    - CONTAINER_USER_PASS=

@@ -10,6 +10,6 @@ ADD ./src /src
 
 RUN /src/entrypoint.sh build
 
-EXPOSE 9000
+EXPOSE 9000 22 50022
 
 ENTRYPOINT ["/src/entrypoint.sh", "run"]
