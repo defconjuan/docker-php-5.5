@@ -81,7 +81,7 @@ A Docker image for [PHP](http://php.net/) version 5.5 that runs PHP in FPM (Fast
       -e GROUP_ID="" \
       -e CONTAINER_USER_PASS="" \
       -d \
-      defconjuan/docker-php-5.5:1.2.12.5
+      defconjuan/docker-php-5.5:1.2.12.6
 
     CONTAINER="apache" && sudo docker run \
       --name "${CONTAINER}" \
@@ -99,7 +99,7 @@ A Docker image for [PHP](http://php.net/) version 5.5 that runs PHP in FPM (Fast
       && git clone https://github.com/defconjuan/docker-php.git "${TMP}" \
       && cd "${TMP}" \
       && git checkout 1.2.12.5 \
-      && sudo docker build -t defconjuan/docker-php-5.5:1.2.12.5 . \
+      && sudo docker build -t defconjuan/docker-php-5.5:1.2.12.6 . \
       && cd -
 
 ## Changing the container behaviour on runtime through environment variables
