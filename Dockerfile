@@ -12,6 +12,10 @@ RUN /src/entrypoint.sh build
 
 EXPOSE 9000 50022
 
-CMD service ssh start
+RUN mkdir -p /var/run/sshd
+#RUN /usr/sbin/sshd -D
+RUN /etc/init.d/ssh start
+RUN update-rc.d ssh defaults
+RUN service ssh start
 
 ENTRYPOINT ["/src/entrypoint.sh", "run"]
